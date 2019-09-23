@@ -33,7 +33,7 @@ describe('bouncing-ball', function() {
 			assert.throws(() => calculateBouncePaths(10, 11), Error)
 		})
 
-		it('should finished less then for 4 second', function() {
+		it('should finish less than for 4 second', function() {
 			const startTime = new Date().getTime()
 			calculateBouncePaths(120, 0)
 			const executionTime = new Date().getTime() - startTime
